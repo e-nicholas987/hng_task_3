@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --primary-color: #c4e0ca;
+}
+
+body {
+  display: flex;
+  padding: 2rem;
+  background: #fcfdf9;
+  gap: 1.5rem;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: underline;
+}
+a:visited {
+  color: unset;
+}
+
+section.personal-info {
+  flex-basis: 40%;
+  max-width: 500px;
+}
+
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+section.personal-info img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* object-fit: contain; */
+}
+
+section.personal-info h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #2b2829;
+  text-align: center;
+}
+
+section.personal-info .title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #767c7b;
+  letter-spacing: 3px;
+}
+
+section.personal-info article {
+  padding: 2rem 1.5rem;
+  background: #c4e0ca;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+section.personal-info article p {
+  color: #575353;
+}
+section.personal-info article h3 {
+  margin-bottom: 0.8rem;
+  color: #2b2829;
+}
+section.personal-info article span,
+section.personal-info article ul li {
+  display: block;
+  color: #575353;
+}
+
+section.history {
+  flex-basis: 60%;
+  padding-top: 2.5rem;
+}
+
+section.history .section-title {
+  display: flex;
+  height: 2rem;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+section.history .section-title h3 {
+  align-self: center;
+}
+section.history .section-title .icon {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(75, 100, 146);
+}
+section.history .section-title .icon i {
+  color: #f4f4f4;
+}
+
+section.history .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-right: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+section.history .wrapper {
+  border-left: 1px solid #b3bcbd;
+}
+
+section.history .wrapper .duration {
+  display: block;
+}
+
+section.history .wrapper .job,
+section.history .wrapper .school {
+  position: relative;
+  left: -1px;
+  border-left: 1px solid #2b2829;
+  padding-left: 1rem;
+}
+
+section.history .wrapper ul li,
+section.history .wrapper .school .degree {
+  color: #575353;
+}
+
+section.history .references .logos {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem 0rem 2rem;
+}
+section.history .references .logos img {
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+section.history .references .logos .box strong {
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+  color: #575353;
+}
+
+@media (max-width: 414px) {
+  body {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  section.personal-info img {
+      width: 200px;
+      height: 200px;
+  }
+
+  section.history .references .logos img {
+    width: 70px;
+    height: 70px;
+  }
+
+  section.history .references .logos {
+    justify-content: space-between;
+  }
+
+  section.history .references .logos strong{
+      font-size: 14px;
+  }
+  section.history {
+      padding-top: 2rem;
+  }
+}
